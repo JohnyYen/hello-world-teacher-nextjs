@@ -23,7 +23,9 @@ export function HeroSection() {
               </Link>
             </Button>
             <Button variant="outline" size="lg">
-              Saber Más
+              <Link href="/docs">
+                Saber Más
+              </Link>
             </Button>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-4xl mt-12">
