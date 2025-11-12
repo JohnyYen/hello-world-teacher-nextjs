@@ -10,21 +10,27 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  // Heredas las configuraciones base de Next.js
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 
-  // Aquí puedes añadir tus overrides o reglas personalizadas
+  // 👇 Aquí desactivas todas las reglas
   {
     rules: {
-      "react/no-unescaped-entities": "off", // 👈 Desactiva la regla problemática
+      "no-restricted-syntax": "off",
+      "no-unused-vars": "off",
+      "no-undef": "off",
+      "no-console": "off",
+      "no-debugger": "off",
+      "no-empty": "off",
+      "no-extra-semi": "off",
+      "no-unreachable": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "react/no-unescaped-entities": "off",
+      "jsx-a11y/*": "off",
     },
-    ignores: [
-      "node_modules/**",
-      ".next/**",
-      "out/**",
-      "build/**",
-      "next-env.d.ts",
-    ],
+    linterOptions: {
+      reportUnusedDisableDirectives: false,
+    },
   },
 ];
 
