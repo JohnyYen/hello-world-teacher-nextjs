@@ -177,21 +177,21 @@ export async function getStudent(id: string): Promise<Student | null> {
   // In a real application, this would be an API call to fetch data from a database
   // Simulating an async operation
   await new Promise(resolve => setTimeout(resolve, 100));
-  return mockStudents[id] || null;
+  return mockStudents[id] as any || null;
 }
 
 export async function getAllStudents(): Promise<Student[]> {
   // In a real application, this would be an API call to fetch data from a database
   // Simulating an async operation
   await new Promise(resolve => setTimeout(resolve, 100));
-  return Object.values(mockStudents);
+  return Object.values(mockStudents) as any;
 }
 
 export async function getStudents(): Promise<(Student & { course: string })[]> {
   // In a real application, this would be an API call to fetch data from a database
   // Simulating an async operation
   await new Promise(resolve => setTimeout(resolve, 100));
-  return mockStudentsList;
+  return mockStudentsList as any;
 }
 
 export async function getUniqueCourses(): Promise<string[]> {
