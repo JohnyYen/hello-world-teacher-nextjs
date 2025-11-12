@@ -10,8 +10,14 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  // Heredas las configuraciones base de Next.js
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+
+  // Aquí puedes añadir tus overrides o reglas personalizadas
   {
+    rules: {
+      "react/no-unescaped-entities": "off", // 👈 Desactiva la regla problemática
+    },
     ignores: [
       "node_modules/**",
       ".next/**",

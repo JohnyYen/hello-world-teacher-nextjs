@@ -27,6 +27,12 @@ export function NavLanding() {
         >
           Inicio
         </Link>
+          <Link
+          href="/docs"
+          className="text-sm font-medium hover:underline underline-offset-4"
+        >
+          Docs
+        </Link>
         <Link
           href="/#description"
           className="text-sm font-medium hover:underline underline-offset-4"
