@@ -27,6 +27,7 @@ const eslintConfig = [
       "react/prop-types": "off",
       "react/no-unescaped-entities": "off",
       "jsx-a11y/*": "off",
+      "@typescript-eslint/no-explicit-any": "off",
     },
     linterOptions: {
       reportUnusedDisableDirectives: false,
