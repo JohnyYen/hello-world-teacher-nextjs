@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Mail, MessageCircle, ChevronLeft } from "lucide-react";
 import Link from "next/link";
-import { Student } from "./student-data-provider";
+import { Student } from "@/types/index";
 
 type StudentDetailProps = {
   student: Student;
