@@ -22,7 +22,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import StudentForm from "./student-form";
-import { Student } from "./student-data-provider";
+import { Student } from "@/types/index";
 
 type StudentTableProps = {
   initialStudents: Student[];
